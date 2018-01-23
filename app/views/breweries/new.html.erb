@@ -1,0 +1,11 @@
+<h1>New Brewery</h1>
+
+<%= form_for @brewery do |f| %>
+  <div>
+    <%= f.label :name  %>
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+  <div>
+    <%= f.submit 'Add Brewery '%>
+  </div>
+<% end %>

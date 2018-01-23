@@ -1,0 +1,22 @@
+<h1>Breweries</h1>
+
+<div>
+  <%= link_to 'New Brewery', new_brewery_path %>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @breweries.each do |brewery| %>
+      <tr>
+        <td><%= brewery.id %></td>
+        <td><%= brewery.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
